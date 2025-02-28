@@ -1,0 +1,41 @@
+body {
+  background-color: #000002;
+  opacity: 0.9;
+  padding: 30px;
+  max-width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  .right { float:right }
+}
+
+a:hover { 
+  background: teal;
+  color: black;
+}
+
+a:link {
+  text-decoration: underline;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.left-margin {
+  padding-left: 13px;
+}
+
+footer {
+ line-height: 30px;
+ width: 97%;
+ border-top: 0.5px solid rgb(82, 82, 82);
+ font-size: 13px;
+}
