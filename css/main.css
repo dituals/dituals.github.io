@@ -5,7 +5,10 @@ body {
   max-width: 700px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  .right { float:right }
+  .right {
+    float:right;
+    font-size: 11px;
+  }
 }
 
 a:hover { 
