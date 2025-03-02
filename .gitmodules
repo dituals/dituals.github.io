@@ -1,3 +1,3 @@
-[submodule "dituals.github.io/dituals.github.io"]
-    path = dituals.github.io/dituals.github.io
+[submodule "dituals.github.io/"]
+    path = dituals.github.io
     url = https://github.com/dituals/dituals.github.io.git
