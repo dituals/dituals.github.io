@@ -52,3 +52,9 @@ footer {
     text-decoration: underline;
   }
 }
+
+h2,h3 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+} 
