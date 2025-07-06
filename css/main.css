@@ -1,4 +1,11 @@
+html {
+  display: table;
+  margin: auto;
+}
+
 body {
+  display: table-cell;
+  vertical-align: middle;
   background-color: #000002;
   opacity: 0.9;
   padding: 30px;
