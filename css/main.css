@@ -42,19 +42,19 @@ ul.header {
   background-color: black;
 }
 
-.active {
-  background-color: teal;
-}
-
-li {
+li.header {
   float: left;
 }
 
-li a {
+a.header {
   display: block;
   text-align: center;
   padding: 10px;
   text-decoration: none;
+}
+
+a.active {
+    background-color: teal
 }
 
 footer {
