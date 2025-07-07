@@ -30,14 +30,27 @@ a:visited {
   color: white;
 }
 
-ul.no-bullets {
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+  .active {
+    background-color: teal;
+  }
 }
 
-ul.left-margin {
-  padding-left: 13px;
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 footer {
