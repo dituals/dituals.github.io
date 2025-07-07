@@ -1,6 +1,5 @@
 body {
-  display: table-cell;
-  vertical-align: middle;
+  margin: 0 auto;
   background-color: #000000;
   opacity: 0.9;
   padding: 30px;

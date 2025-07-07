@@ -1,55 +1,102 @@
 body {
-  display: table-cell;
-  vertical-align: middle;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  padding: 30px;
-  word-spacing: normal;
-  line-height: 1.5;
-  max-width: 700px;
+  margin: 20px auto;
+  max-width: 750px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  background-color: #252525;
+  color: #ffffff;
+  padding: 0 10px;
+  font-family: monospace;
+  hyphens: auto;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000000;
-  position: fixed;
-  top: 0;
-  width: 100%;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  font-variant: small-caps;
 }
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+a {
+  color: #00ffff;
   text-decoration: none;
 }
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: teal;
+a:hover {
+  color: #c6ba93;
 }
-
-.active {
-  background-color: teal;
+h1 {
+  color: #9a61ab;
+  font-size: 2em;
+  font-weight: 650;
 }
-
-footer {
-  line-height: 30px;
-  border-top: 0.5px solid rgb(82, 82, 82);
-  font-size: 13px;
-  a:link {
-    text-decoration: none;
-  }
-  a:hover {
-    background: none;
-    text-decoration: underline;
-  }
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  color: #9a61ab;
+  font-size: 1.1em;
+}
+h2:before {
+  content: "## ";
+  content: "## " / "";
+}
+h3:before {
+  content: "### ";
+  content: "### " / "";
+}
+h4:before {
+  content: "#### ";
+  content: "#### " / "";
+}
+h5:before {
+  content: "##### ";
+  content: "##### " / "";
+}
+code {
+  color: #252525;
+  background: #e4d4e8;
+}
+pre {
+  tab-size: 4;
+}
+details {
+  padding: 0.6rem 1rem;
+  background: #9a61ab;
+  border: 3px inset #7d7d7d;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+summary {
+  cursor: pointer;
+  font-weight: 900;
+}
+details[open] {
+  padding-bottom: 0.75rem;
+}
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+details[open] > *:last-child {
+  margin-bottom: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+nav {
+  display: inline-block;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav a {
+  font-weight: 900;
+}
+nav a[href*="/"]::before {
+  content: "[ ";
+}
+nav a[href*="/"]::after {
+  content: " ]";
 }
