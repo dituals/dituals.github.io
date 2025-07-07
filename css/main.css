@@ -40,9 +40,10 @@ ul.header {
   padding: 0;
   overflow: hidden;
   background-color: black;
-  .active {
-    background-color: teal;
-  }
+}
+
+.active {
+  background-color: teal;
 }
 
 li {
