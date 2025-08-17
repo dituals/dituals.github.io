@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  background-color: #ffffff; /* Light mode background */
+  background-color: #000000; /* Black background */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   word-spacing: normal;
   line-height: 1.5;
-  color: #333333;
-  transition: background-color 0.3s, color 0.3s;
+  color: #ffffff; /* White text for black background */
   min-width: 320px;
 }
 
@@ -18,15 +17,15 @@ body {
   box-sizing: border-box;
 }
 
-/* Navigation bar styling */
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -54,18 +53,18 @@ li.header a {
   text-align: center;
   padding: 10px 15px;
   text-decoration: none;
-  color: #333333;
+  color: #ffffff;
   transition: background-color 0.3s;
 }
 
 li.header a:hover {
-  background-color: teal;
-  color: white;
+  background-color: #008080;
+  color: #000000;
 }
 
 li.header a.active {
-  background-color: teal;
-  color: white;
+  background-color: #008080;
+  color: #000000;
 }
 
 main {
@@ -75,7 +74,7 @@ main {
 
 footer {
   line-height: 30px;
-  border-top: 0.5px solid #cccccc;
+  border-top: 0.5px solid #333333;
   font-size: 13px;
   margin-top: 20px;
   padding-top: 20px;
@@ -83,8 +82,8 @@ footer {
   justify-content: space-between;
   width: 100%;
   max-width: 700px;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -108,60 +107,33 @@ footer .right {
 }
 
 h2, h3 {
+  border-bottom: 2px solid #333333;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
   text-align: left;
 }
 
-.dark-theme {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.dark-theme a:link,
-.dark-theme a:visited {
-  color: #ffffff;
-}
-
-.dark-theme a:hover {
+a:hover {
   background: #008080;
-  color: #000000;
+  color: black;
 }
 
-.dark-theme header {
-  background-color: #121212;
+a:link {
+  text-decoration: underline;
+  color: #0000ff;
 }
 
-.dark-theme li.header a {
-  color: #cccccc;
+a:visited {
+  text-decoration: none;
+  color: #800080;
 }
 
-.dark-theme li.header a:hover,
-.dark-theme li.header a.active {
-  color: white;
+footer a:link {
+  text-decoration: none;
+  color: #0000ff;
 }
 
-.dark-theme footer {
-  border-top: 0.5px solid #333333;
-}
-
-.dark-theme h2,
-.dark-theme h3 {
-  border-bottom: 2px solid #555555;
-}
-
-#theme-toggle {
+footer a:hover {
   background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  padding: 5px;
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  z-index: 1000;
-}
-
-#theme-toggle:hover {
-  opacity: 0.8;
+  text-decoration: underline;
 }
