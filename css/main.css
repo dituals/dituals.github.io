@@ -1,35 +1,15 @@
 body {
-  margin: 0 auto;
-  max-width: 700px;
+  margin: 0;
   background-color: #ffffff; /* Light mode background */
-  opacity: 0.9;
-  padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   word-spacing: normal;
   line-height: 1.5;
-  text-align: center; /* Center text alignment */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-  color: #333333; /* Improved text color for better legibility */
-  min-width: 320px; /* Prevent content from becoming too narrow */
+  color: #333333;
+  transition: background-color 0.3s, color 0.3s;
+  min-width: 320px;
 }
 
-a:hover {
-  background: teal;
-  color: black;
-}
-
-a:link {
-  text-decoration: underline;
-  color: #0000ff; /* Light mode link color */
-}
-
-a:visited {
-  text-decoration: none;
-  color: #800080; /* Light mode visited link color */
-}
-
-/* Container for all content to ensure proper centering */
 .container {
   width: 100%;
   max-width: 700px;
@@ -39,17 +19,31 @@ a:visited {
 }
 
 /* Navigation bar styling */
-ul.header {
+header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+ul.header {
   list-style-type: none;
   margin: 0;
   padding: 0.1em 0;
-  background-color: #ffffff; /* White background for light mode */
-  z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
 
 li.header {
@@ -76,8 +70,8 @@ li.header a.active {
 }
 
 main {
-  margin-top: 60px; /* Adjust for fixed navigation bar */
-  padding: 20px;
+  margin-top: 60px;
+  padding: 20px 0;
 }
 
 footer {
@@ -89,6 +83,11 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 footer a:link {
@@ -113,7 +112,7 @@ h2, h3 {
   border-bottom: 2px solid #cccccc;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
-  text-align: left; /* Left-align headings for better readability */
+  text-align: left;
 }
 
 .dark-theme {
@@ -131,7 +130,7 @@ h2, h3 {
   color: #000000;
 }
 
-.dark-theme ul.header {
+.dark-theme header {
   background-color: #121212;
 }
 
@@ -161,7 +160,7 @@ h2, h3 {
   padding: 5px;
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 20px;
   z-index: 1000;
 }
 
