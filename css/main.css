@@ -1,7 +1,6 @@
 body {
   margin: 0 auto;
   max-width: 700px;
-  margin-top: 30px;
   background-color: #ffffff; /* Light mode background */
   opacity: 0.9;
   padding: 30px;
@@ -9,9 +8,10 @@ body {
   font-size: 16px;
   word-spacing: normal;
   line-height: 1.5;
-  text-align-last: left;
+  text-align: center; /* Center text alignment */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition */
   color: #333333; /* Improved text color for better legibility */
+  min-width: 320px; /* Prevent content from becoming too narrow */
 }
 
 a:hover {
@@ -29,16 +29,28 @@ a:visited {
   color: #800080; /* Light mode visited link color */
 }
 
+/* Container for all content to ensure proper centering */
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 /* Navigation bar styling */
 ul.header {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   list-style-type: none;
   margin: 0;
-  padding: 0.1em;
-  background-color: black;
+  padding: 0.1em 0;
+  background-color: #ffffff; /* White background for light mode */
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 li.header {
@@ -48,33 +60,41 @@ li.header {
 li.header a {
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 10px 15px;
   text-decoration: none;
-  color: white;
+  color: #333333;
   transition: background-color 0.3s;
 }
 
 li.header a:hover {
   background-color: teal;
+  color: white;
 }
 
 li.header a.active {
   background-color: teal;
+  color: white;
+}
+
+main {
+  margin-top: 60px; /* Adjust for fixed navigation bar */
+  padding: 20px;
 }
 
 footer {
   line-height: 30px;
-  border-top: 0.5px solid #cccccc; /* Light mode border color */
+  border-top: 0.5px solid #cccccc;
   font-size: 13px;
   margin-top: 20px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 footer a:link {
   text-decoration: none;
-  color: #0000ff; /* Light mode footer link color */
+  color: #0000ff;
 }
 
 footer a:hover {
@@ -91,9 +111,10 @@ footer .right {
 }
 
 h2, h3 {
-  border-bottom: 2px solid #cccccc; /* Light mode border color */
+  border-bottom: 2px solid #cccccc;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
+  text-align: left; /* Left-align headings for better readability */
 }
 
 .dark-theme {
@@ -109,6 +130,19 @@ h2, h3 {
 .dark-theme a:hover {
   background: #008080;
   color: #000000;
+}
+
+.dark-theme ul.header {
+  background-color: #121212;
+}
+
+.dark-theme li.header a {
+  color: #cccccc;
+}
+
+.dark-theme li.header a:hover,
+.dark-theme li.header a.active {
+  color: white;
 }
 
 .dark-theme footer {
