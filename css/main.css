@@ -11,6 +11,7 @@ body {
   line-height: 1.5;
   text-align-last: left;
   transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  color: #333333; /* Improved text color for better legibility */
 }
 
 a:hover {
@@ -28,10 +29,47 @@ a:visited {
   color: #800080; /* Light mode visited link color */
 }
 
+/* Navigation bar styling */
+ul.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.1em;
+  background-color: black;
+  z-index: 1000;
+}
+
+li.header {
+  display: inline-block;
+}
+
+li.header a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+li.header a:hover {
+  background-color: teal;
+}
+
+li.header a.active {
+  background-color: teal;
+}
+
 footer {
   line-height: 30px;
   border-top: 0.5px solid #cccccc; /* Light mode border color */
   font-size: 13px;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer a:link {
@@ -42,6 +80,14 @@ footer a:link {
 footer a:hover {
   background: none;
   text-decoration: underline;
+}
+
+footer .left {
+  text-align: left;
+}
+
+footer .right {
+  text-align: right;
 }
 
 h2, h3 {
