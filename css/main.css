@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #000000; /* Black background */
+  background-color: rgb(26, 30, 30); /* Black background */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   word-spacing: normal;
@@ -74,7 +74,6 @@ main {
 
 footer {
   line-height: 30px;
-  border-top: 0.5px solid #333333;
   font-size: 13px;
   margin-top: 20px;
   padding-top: 20px;
@@ -86,11 +85,12 @@ footer {
   margin-right: auto;
   padding: 0 20px;
   box-sizing: border-box;
+  color: rgb(155, 150, 150);
 }
 
 footer a:link {
-  text-decoration: none;
-  color: #0000ff;
+  text-decoration: underline;
+  color: rgb(155, 150, 150);
 }
 
 footer a:hover {
@@ -120,20 +120,10 @@ a:hover {
 
 a:link {
   text-decoration: underline;
-  color: #0000ff;
+  color: #008080;
 }
 
 a:visited {
   text-decoration: none;
-  color: #800080;
-}
-
-footer a:link {
-  text-decoration: none;
-  color: #0000ff;
-}
-
-footer a:hover {
-  background: none;
-  text-decoration: underline;
+  color: rgb(155, 150, 150);
 }
