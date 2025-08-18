@@ -76,7 +76,8 @@ footer {
   line-height: 30px;
   font-size: 13px;
   margin-top: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   width: 100%;
